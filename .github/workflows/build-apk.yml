@@ -1,3 +1,4 @@
+
 name: Build Sky Android APK
 
 on:
@@ -31,7 +32,7 @@ jobs:
         with:
           packages: 'platform-tools'
 
-      - name: Install Android NDK and CMake
+      - name: Install Android SDK packages
         run: |
           yes | sdkmanager --licenses || true
           sdkmanager \
@@ -42,6 +43,18 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+
+      - name: Generate Debug Keystore
+        run: |
+          keytool -genkeypair \
+            -keystore debug.keystore \
+            -storepass android \
+            -alias androiddebugkey \
+            -keypass android \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -dname "CN=Android Debug,O=Android,C=US"
 
       - name: Build Debug APK
         run: gradle :app:assembleDebug -PenableNativeBuild=true
