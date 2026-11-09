@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Sky</string>
+    <string name="assistant_service_label">Sky Digital Assistant</string>
+    <string name="recognition_service_label">Sky Whistle Speech Recognition</string>
+    <string name="accessibility_service_label">Sky Hands-Free Quick Settings</string>
+    <string name="accessibility_service_description">Enables Sky to toggle Wi-Fi and Bluetooth tiles in Quick Settings when requested by voice.</string>
+    <string name="qs_tile_label">Sky Voice</string>
+    <string name="widget_label">Sky Assistant</string>
+    <string name="shortcut_voice_short">Sky Voice</string>
+    <string name="shortcut_voice_long">Ask Sky with Voice</string>
+    <string name="shortcut_private_short">Private Chat</string>
+    <string name="shortcut_private_long">New Ghost Chat</string>
+</resources>

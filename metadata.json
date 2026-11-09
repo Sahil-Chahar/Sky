@@ -1,0 +1,6 @@
+{
+  "name": "Sky",
+  "description": "On-device Android voice assistant and local LLM chat powered by Cactus Needle 3, Whistle STT, and llama.cpp with a Neo 3D neumorphic design system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

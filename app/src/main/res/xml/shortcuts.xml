@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:shortcutId="sky_voice_assist"
+        android:shortcutLongLabel="@string/shortcut_voice_long"
+        android:shortcutShortLabel="@string/shortcut_voice_short">
+        <intent
+            android:action="android.intent.action.ASSIST"
+            android:targetClass="com.example.assistant.SkyAssistActivity"
+            android:targetPackage="com.sky.assistant" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:shortcutId="sky_private_chat"
+        android:shortcutLongLabel="@string/shortcut_private_long"
+        android:shortcutShortLabel="@string/shortcut_private_short">
+        <intent
+            android:action="com.sky.assistant.ACTION_PRIVATE_CHAT"
+            android:targetClass="com.example.MainActivity"
+            android:targetPackage="com.sky.assistant" />
+    </shortcut>
+</shortcuts>
